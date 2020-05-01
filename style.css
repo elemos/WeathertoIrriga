@@ -29,39 +29,35 @@ body {
     font-size: 2em;
     font-weight: 600;
 }
-  
+/*Clima e temperatura  */  
 .current-temperature {  
     display: flex;  
     margin-top: 0.25em;  
     width: 100%;
     margin-bottom: 10px;
 }  
-  
 .current-temperature__icon-container {  
     flex-grow: 1.25;  
     text-align: center;  
-}  
-  
+}   
 .current-temperature__content-container {  
     flex-grow: 1;  
     text-align: center;  
 }  
-  
 .current-temperature__icon {  
     width: 10.5em;  
 }  
-  
 .current-temperature__value {  
     font-size: 5.25em;  
     font-weight: 300;  
 }  
-  
 .current-temperature__summary {  
     margin-top: -0.5em;  
     margin-left: -0.6em;  
     font-size: 1.125em;  
 }
   
+/* Outras finormações */
 .current-stats {  
     display: flex;
     justify-content: space-around;
@@ -71,12 +67,14 @@ body {
     
 }  
   
+/* Clima por hora*/
 .weather-by-hour {  
     display: none;  
     width: 100%;  
      
 }  
   
+
 .next-5-days {  
     width: 100%;  
     

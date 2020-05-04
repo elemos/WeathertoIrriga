@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="utf-8">  
+    <meta content="width=device-width, initial-scale=1">  
+    <title>Weather Irriga</title>  
+    <link href="style.css" rel="stylesheet">  
+    <!--<script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhF1jj3c1BI1Yl-Amr1k9roO-46yZJhLU&libraries=places"></script>
+    -->
+    <script defer src="script.js"></script>
+    
+</head>  
+    <header>
+
+    </header>
+<body>  
+    
+    <div class="main-container">  
+
+      <div class="location-and-date">  
+        <h1 class="location-and-date__location" city_name >
+            Clima Tempo Local
+        </h1>
+        <div con_time>
+            01/05/2020, 15:30
+        </div>
+      </div>  
+
+      <div class="current-temperature">  
+        <div class="current-temperature__icon-container">  
+            <img src="Imagens/sun.svg" class="current-temperature__icon" alt="" height="100px">  
+        </div>  
+        <div class="current-temperature__content-container">  
+        <div class="current-temperature__value" cur_temp >21°</div>  
+        <div class="current-temperature__summary" cur_summary >Mostly Sunny</div>  
+        </div>
+      </div>  
+
+      <div class="current-stats"> 
+          
+        <div>
+            <div class="current-stats__value" daily_max>
+                23&deg;
+            </div>
+            <div class="current-stats__label">
+                <img src="Imagens/thermometer-2.svg" height="20px">
+                Máxima
+            </div>
+            <div class="current-stats__value" daily_min>
+                14&deg;
+            </div>
+            <div class="current-stats__label">
+                <img src="Imagens/thermometer.svg" height="20px">
+                Minima
+            </div>
+        </div>
+        
+        <div>
+            <div class="current-stats__value" cur_velvento>  
+                    7 m/s
+            </div>
+            <div class="current-stats__label"  >
+                <img src="Imagens/wind.svg" height="20px">
+                Vel. Vento</div>
+            <div class="current-stats__value" >
+                <div cur_umidade>
+                    0%
+                </div>
+            </div>
+            <div class="current-stats__label" >
+                 <img src="Imagens/rain.svg" height="20px">
+                Umidade
+            </div>
+        </div>
+        <div>
+            <div class="current-stats__value" cur_prec>
+                0 %
+            </div>
+            <div class="current-stats__label">
+                <img src="Imagens/rain-1.svg" height="20px">
+                Precipitação
+            </div>
+            <div class="current-stats__value" cur_volume>
+                0 mm
+            </div>
+            <div class="current-stats__label">
+                <img src="Imagens/raindrop.svg" height="20px">
+                Vol. Chuva
+            </div>
+        </div>
+      </div>  
+
+      <div class="weather-by-hour">  
+        D) Weather by hour  
+      </div>  
+      <div class="next-5-days">  
+        E) Next 5 days  
+      </div>  
+
+    </div>  
+
+    </body> 
+    <footer>
+        <a href="https://darksky.net/poweredby/">Powered by Darksky</a>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+</html>

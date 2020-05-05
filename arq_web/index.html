@@ -5,8 +5,6 @@
     <meta content="width=device-width, initial-scale=1">  
     <title>Weather Irriga</title>  
     <link href="style.css" rel="stylesheet">  
-    <!--<script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhF1jj3c1BI1Yl-Amr1k9roO-46yZJhLU&libraries=places"></script>
-    -->
     <script defer src="script.js"></script>
     
 </head>  
@@ -17,28 +15,28 @@
     
     <div class="main_container"> 
       <div class="hora_consulta">  
-        <h1 class="Cabeca" city_name >
+        <h1 class="Cabeca" city_name > 
             Clima Tempo Local
         </h1>
-        <div con_time>
+        <div con_time>                                           <!--Data e hora da ultima consulta -->
             01/05/2020, 15:30
         </div>
       </div>  
 
       <div class="temp_atual">  
-        <div class="temp_atual__icon_container">  
-            <img src="Imagens/sun.svg" class="temp_atual__icon" alt="" height="100px"> 
-            <div class="temp_atual__summary" cur_summary >Mostly Sunny</div> 
+        <div class="temp_atual__icon_container">                <!--Icone e estado atual do ceú -->
+            <img src="Imagens/sun.svg" id="currently" class="temp_atual__icon" alt="" height="100px"> 
+            <div class="temp_atual__summary" estado_ceu >Mostly Sunny</div> 
         </div>  
         <div class="temp_atual__content_container">  
-        <div class="temp_atual__value" cur_temp >21°</div>  
+        <div class="temp_atual__value" cur_temp >21°</div>      <!-- Temperatura atual -->
          
         </div>
       </div>  
 
       <div class="dados_atuais"> 
           
-        <div>
+        <div>                                                   <!--Temperatura máxima e minima do dia -->
             <div class="current_stats__value" daily_max>
                 23&deg;
             </div>
@@ -54,7 +52,7 @@
                 Minima
             </div>
         </div>
-        <div>
+        <div>                                                   <!--Velocidade do vento e umidade atual -->
             <div class="current_stats__value" cur_velvento>  
                     7 m/s
             </div>
@@ -67,16 +65,16 @@
                 </div>
             </div>
             <div class="current_stats__label" >
-                 <img src="Imagens/rain.svg" height="20px">
+                 <img src="Imagens/raindrop.svg" height="20px">
                 Umidade
             </div>
         </div>
-        <div>
+        <div>                                                   <!--Preciptação e volume de chuva atual -->
             <div class="current_stats__value" cur_prec>
                 0 %
             </div>
             <div class="current_stats__label">
-                <img src="Imagens/rain-1.svg" height="20px">
+                <img src="Imagens/rain_1.svg" height="20px">
                 Precipitação
             </div>
             <div class="current_stats__value" cur_volume>
@@ -90,170 +88,174 @@
       </div>  
  
 
-  <div class="prox_dias">
-    <h2 class="prox_dias__heading">Next 5 days</h2>
+  <div class="prox_dias">                                       <!--Previsão dos próximos dias -->
+    <h2 class="prox_dias__heading">Próximos dias</h2>
     <div class="prox_dias__container">
 
       <div class="prox_dias__row">
 
-        <div class="prox_dias__date" prox_dia>
-          Tue
-          <div class="prox_dias__label">30/7</div>
+        <div class="prox_dias__date" prox_dia>                          <!--Dia da semana -->
+    
         </div>
 
         <div class="prox_dias__low">
-          <div class="prox_dias__label" prox_dia_min></div>
+          <div class="prox_dias__label" prox_dia_min></div>             <!--Temperatura minima -->
             Minima 
         </div>
 
         <div class="prox_dias__high">
-            <div class="prox_dias__label" prox_dia_max></div>
+            <div class="prox_dias__label" prox_dia_max></div>           <!--Temperatura máxima -->
             Máxima
         </div>
 
         <div class="prox_dias__icon">
-          <img src="icons/sunny.svg" alt="Sunny">
+          <img src="" alt="Sunny" id=icon_day_1 height="40px">          <!--Icon -->
         </div>
 
         <div class="prox_dias__rain">
-          <div class="prox_dias__label" prox_dia_precip></div>
+          <div class="prox_dias__label" prox_dia_precip></div>          <!--Preciptação -->
            Preciptação
         </div>
 
         <div class="prox_dias__wind">
-          <div class="prox_dias__label" prox_dia_vento></div>
+          <div class="prox_dias__label" prox_dia_vento></div>           <!--Velocidade Vento -->
             Vel. Vento
         </div>
 
-      </div> 
+      </div>
+        <!--Dia +1 -->
       <div class="prox_dias__row">
 
-        <div class="prox_dias__date" prox_dia_2>
+        <div class="prox_dias__date" prox_dia_2>                        <!--Dia da semana -->
           Wed
           <div class="prox_dias__label">31/7</div>
         </div>
 
         <div class="prox_dias__low">
-          <div class="prox_dias__label" prox_dia_2_min></div>
+          <div class="prox_dias__label" prox_dia_2_min></div>           <!--temp minima -->
             Minima 
         </div>
 
         <div class="prox_dias__high">
-            <div class="prox_dias__label" prox_dia_2_max></div>
+            <div class="prox_dias__label" prox_dia_2_max></div>         <!--temp máxima -->
             Máxima
         </div>
 
         <div class="prox_dias__icon">
-          <img src="icons/mostly-sunny.svg" alt="Mostly sunny">
+          <img src="" id="icon_day_2" alt="Mostly sunny" height="40px"> <!--Icone-->
         </div>
 
         <div class="prox_dias__rain">
-          <div class="prox_dias__label" prox_dia_2_precip></div>
+          <div class="prox_dias__label" prox_dia_2_precip></div>        <!--preciptação -->
            Preciptação
         </div>
 
         <div class="prox_dias__wind">
-          <div class="prox_dias__label" prox_dia_2_vento></div>
+          <div class="prox_dias__label" prox_dia_2_vento></div>         <!--Velocidade Vento -->
             Vel. Vento
         </div>
 
-      </div>
+      </div>  
+        <!--Dia +2 -->
       <div class="prox_dias__row">
 
-        <div class="prox_dias__date"cprox_dia_3>
-          Thur
-          <div class="prox_dias__label">1/8</div>
+        <div class="prox_dias__date"c prox_dia_3>                       <!--Dia da semana -->
+          
+          <div class="prox_dias__label"></div>
         </div>
 
         <div class="prox_dias__low">
-          <div class="prox_dias__label" prox_dia_3_min></div>
+          <div class="prox_dias__label" prox_dia_3_min></div>           <!--temperatura minima -->
             Minima 
         </div>
 
         <div class="prox_dias__high">
-            <div class="prox_dias__label" prox_dia_3_max></div>
+            <div class="prox_dias__label" prox_dia_3_max></div>         <!--temperatura máxima -->
             Máxima
         </div>
 
         <div class="prox_dias__icon">
-          <img src="icons/mostly-sunny.svg" alt="Mostly sunny">
+          <img src="" id="icon_day_3" alt="Mostly sunny" height="40px"> <!--Icone -->
         </div>
 
         <div class="prox_dias__rain">
-          <div class="prox_dias__label" prox_dia_3_precip></div>
+          <div class="prox_dias__label" prox_dia_3_precip></div>        <!--Preciptação -->
            Preciptação
         </div>
 
         <div class="prox_dias__wind">
-          <div class="prox_dias__label" prox_dia_3_vento></div>
+          <div class="prox_dias__label" prox_dia_3_vento></div>         <!--Velocidade vento -->
             Vel. Vento
         </div>
 
-      </div>
+      </div> 
+        <!--Dia +3 -->
       <div class="prox_dias__row">
 
-        <div class="prox_dias__date" prox_dia_4>
-          Tue
-          <div class="prox_dias__label">2/8</div>
+        <div class="prox_dias__date" prox_dia_4>                            <!--Dia da semana -->
+          
+          <div class="prox_dias__label"></div>
         </div>
 
         <div class="prox_dias__low">
-          <div class="prox_dias__label" prox_dia_4_min></div>
+          <div class="prox_dias__label" prox_dia_4_min></div>               <!--Temperatura minima -->
             Minima 
         </div>
 
         <div class="prox_dias__high">
-            <div class="prox_dias__label" prox_dia_4_max></div>
+            <div class="prox_dias__label" prox_dia_4_max></div>             <!--Temperatura máxima -->
             Máxima
         </div>
 
         <div class="prox_dias__icon">
-          <img src="icons/sunny.svg" alt="Sunny">
+          <img src="" id="icon_day_4" alt="Sunny" height="40px">            <!--Icone -->
         </div>
 
         <div class="prox_dias__rain">
-          <div class="prox_dias__label" prox_dia_4_precip></div>
+          <div class="prox_dias__label" prox_dia_4_precip></div>            <!--Preciptação -->
            Preciptação
         </div>
 
         <div class="prox_dias__wind">
-          <div class="prox_dias__label" prox_dia_4_vento></div>
+          <div class="prox_dias__label" prox_dia_4_vento></div>             <!--Velocidade Vento -->
             Vel. Vento
         </div>
 
-      </div>
+      </div> 
+        <!--Dia +4 -->
       <div class="prox_dias__row">
 
-        <div class="prox_dias__date" prox_dia_5>
-          Tue
-          <div class="prox_dias__label">30/7</div>
+        <div class="prox_dias__date" prox_dia_5>                                <!--Dia da semana -->
+          
+          <div class="prox_dias__label"></div>
         </div>
 
         <div class="prox_dias__low">
-          <div class="prox_dias__label" prox_dia_5_min></div>
+          <div class="prox_dias__label" prox_dia_5_min></div>                   <!--Temperatura minima -->
             Minima 
         </div>
 
         <div class="prox_dias__high">
-            <div class="prox_dias__label" prox_dia_5_max></div>
+            <div class="prox_dias__label" prox_dia_5_max></div>                 <!--temperatura máxima -->
             Máxima
         </div>
 
         <div class="prox_dias__icon">
-          <img src="icons/mostly-sunny.svg" alt="Mostly sunny">
+          <img src="" id="icon_day_5" alt="Mostly sunny" height="40px">         <!--Icon -->
         </div>
 
         <div class="prox_dias__rain">
-          <div class="prox_dias__label" prox_dia_5_precip></div>
+          <div class="prox_dias__label" prox_dia_5_precip></div>                <!--Preciptação -->
            Preciptação
         </div>
 
         <div class="prox_dias__wind">
-          <div class="prox_dias__label" prox_dia_5_vento></div>
+          <div class="prox_dias__label" prox_dia_5_vento></div>                 <!--Velocidade Vento -->
             Vel. Vento
         </div>
 
       </div>
+        <!--Dia +5 -->
 
     </div>
   </div>
